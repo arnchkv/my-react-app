@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './App.css';
-import Person from "./Components/Person";
+import Person from "./Components/Person/Person";
 // import Man from "./Components/Man";
 // import Demo from "./Components/Demo";
 

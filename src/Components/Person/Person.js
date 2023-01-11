@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import Man from './Man';
+import './Person.css'
 
 class Person extends Component {
     constructor(props) {
@@ -27,12 +28,18 @@ class Person extends Component {
         //     </div>
 
         // );
+
+        const style = {
+            fontSize: "40px",
+            color: "red"
+        }
+
         return (
-            <div>
+            <div className='PersonBox'>
                 <h1>
-                    <i>Dear {this.state.name}, {this.state.age} years Welcome</i>
+                    <label className='PersonLabel'>Name</label> : <i>{this.props.name}</i>
                     <br />
-                    <button onClick={this.nameChangeHandler.bind(this)}>Click Me</button>
+                    <label style={style}>Age</label> : <i>{this.props.age}</i>
                 </h1>
             </div>
         );
